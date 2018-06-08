@@ -203,13 +203,14 @@ nav a:hover {
 .banner h1 {
   font-family: 'Monoton', cursive;
   text-align: center;
+  word-spacing: 20px;
   margin-right: 200px;
   margin-left: 200px;
-  background-color: #000;
-  color: #fff; 
+  color: yellow; 
   font-size: 83px;
   font-weight: 300;
-  opacity: 0.8;
+  opacity: 1;
+  text-shadow: -6px 10px 5px black;
 }
 
 .banner h2 {
@@ -403,9 +404,8 @@ nav a:hover {
 }
 
 .Info_slides {
-  max-width: 95%;
+  max-width: 75%;
   margin: auto;
-  background: url('..img/section3Background.jpg');
   padding-bottom: 20px;
 }
 
