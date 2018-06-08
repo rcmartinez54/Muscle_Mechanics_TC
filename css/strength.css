@@ -191,20 +191,15 @@ nav a:hover {
   background-size: cover;
 }
 
-.banner .brand .brand_img {
+.banner .brand_words img {
+  width: 60px;
   float: left;
-  width: 10%;
-  padding: 20px;
-}
-
-.banner .brand .brand_img img {
-  width: 80%;
 }
 
 .banner .brand .brand_words {
   float: left;
-  width: 20%;
-  padding: 10px;
+  width: 80%;
+  padding: 30px;
   color: #fff;
 }
 
@@ -224,7 +219,6 @@ nav a:hover {
   word-spacing: 30px;
 }
 
-
 @media (max-width: 480px) {
   div.banner-text {
     padding-top: 30em;
@@ -232,19 +226,19 @@ nav a:hover {
   div.banner-text h2 {
     margin-left: 1em;
   }
+  .banner .brand .brand_words h3 {
+    margin-top: 0px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .banner h1 {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 60px;
   }
   .banner .brand .brand_words {
-    width: 35%;
-  }
-  .banner .brand .brand_img {
-    width: 20%;
+    width: 85%;
   }
 }
 
@@ -309,13 +303,15 @@ nav a:hover {
   opacity: 0.2;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   #options .nav_options {
     float: none;
     width: 100%;
     margin: 0;
   }
+}
 
+@media (max-width: 900px) {
   #options .nav_options h3 {
     margin-top: 0;
   }

@@ -172,20 +172,16 @@ nav a:hover {
   background-size: cover;
 }
 
-.banner .brand .brand_img {
+.banner .brand_words img {
+  width: 60px;
   float: left;
-  width: 10%;
-  padding: 20px;
-}
-
-.banner .brand .brand_img img {
-  width: 80%;
 }
 
 .banner .brand .brand_words {
   float: left;
-  width: 14%;
-  padding: 10px;
+  width: 80%;
+  padding: 30px;
+  color: #fff;
 }
 
 .banner .banner_words {

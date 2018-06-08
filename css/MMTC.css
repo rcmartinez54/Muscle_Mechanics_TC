@@ -116,7 +116,7 @@ nav a:hover {
 @media (max-width: 480px) {
 
   header {
-    width: 96%;
+    width: 100%;
   }
   .header img {
     display: none;
@@ -136,7 +136,7 @@ nav a:hover {
     padding: .10em;
   }
   nav li {
-    background-color: lightgray;
+    background-color: yellow;
     border-radius: .5em;
     margin-right: .5em;
     margin-bottom: .5em;
@@ -147,6 +147,7 @@ nav a:hover {
   nav a {
     padding: 1em;
     text-decoration: none;
+    color: #000;
   }
   /*
   .banner h3 {
@@ -236,6 +237,17 @@ nav a:hover {
   }
 }
 
+@media (max-width: 750px) {
+  .banner h1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 38px;
+  }
+  .banner .brand .brand_words {
+    width: 85%;
+  }
+}
+
 #options {
   max-width: 100%;
 }
@@ -277,6 +289,20 @@ nav a:hover {
 
 #options .nav_options:hover {
   opacity: 0.2;
+}
+
+@media (max-width: 750px) {
+  #options .nav_options {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #options .nav_options h3 {
+    margin-top: 0;
+  }
 }
 
 /* -- Universal Section Styles -- */
@@ -339,7 +365,6 @@ nav a:hover {
 #section_one .section_wrap .right_side {
   float: right;
   margin-top: 0;
-  padding: 100px 10px 10px;
   width: 68%;
   color: #000;
   position: relative;
@@ -354,9 +379,6 @@ nav a:hover {
   padding: 10px;
   background: #000;
   color: yellow;
-  position: absolute;
-  top: 3px;
-  left: -25px;
   z-index: 2;
   opacity: 0.7;
 }
@@ -378,25 +400,26 @@ nav a:hover {
 }
 
 #section_two .mmInfo {
-  margin-left: 100px;
   margin-right: 100px;
   line-height: 30px;
   font-size: 20px;
 }
 
 #section_two .mmInfo h2 {
-  position: absolute;
   background: #000;
   color: yellow;
-  left: 70px;
-  top: 40px;
   padding: 10px;
-  opacity: 0.6;
+  opacity: 0.7;
   z-index: 1;
 }
 
 #section_two .mmInfo .first_p {
-  margin-top: 160px;
+  margin-top: 100px;
+  padding-left: 100px;
+}
+
+#section_two .mmInfo p {
+  padding-left: 100px;
 }
 
 #section_two .section_wrap .mmInfo {
