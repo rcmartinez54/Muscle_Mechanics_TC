@@ -115,7 +115,7 @@ nav a:hover {
 
 @media (max-width: 480px) {
   header {
-    width: 96%;
+    width: 100%;
   }
   .header img {
     display: none;
@@ -207,12 +207,26 @@ nav a:hover {
   opacity: 1;
 }
 
-@media (max-width: 480px) {
-  div.banner-text {
-    padding-top: 30em;
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  .banner .banner_words h1 {
+    font-size: 2.1875em;
   }
-  div.banner-text h2 {
-    margin-left: 1em;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  .banner .banner_words h1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 3.1875em;
+  }
+  .banner .brand .brand_words {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 751px) {
+  .banner .banner_words h1 {
+    font-size: 4.1875em;
   }
 }
 
@@ -257,6 +271,20 @@ nav a:hover {
 
 #options .nav_options:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 750px) {
+  #options .nav_options {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #options .nav_options h3 {
+    margin-top: 0;
+  }
 }
 
 /* -- Section One -- */
@@ -356,6 +384,26 @@ nav a:hover {
 .size img {
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  #ads_left,
+  #ads_right {
+    display: none;
+  }
+
+  #one {
+    width: 98%;
+  }
+  #one .video video {
+    width: 100%;
+    margin: 0;
+    border-radius: 0px;
+  }
+  #two {
+    width: 100%;
+  }
+}
+
 
 /* -- Footer -- */
 
