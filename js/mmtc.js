@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
     	if ($(document).scrollTop() > 700) {
         	$(".left_side").fadeIn(800);
-       	} if ($(document).scrollTop() > 780) {
+      } if ($(document).scrollTop() > 780) {
         	$("header").fadeIn(600);
     	} if ($(document).scrollTop() < 700) {
        		$("header").fadeOut(600);
@@ -19,7 +19,7 @@ $(document).ready(function() {
     	} if ($(document).scrollTop() > 900) {
     		console.log('hello');
     		$('#two').addClass('two_change'); 
-		} if ($(document).scrollTop() > 1640) {
+		  } if ($(document).scrollTop() > 1640) {
     	    $(".info_imgs").fadeIn(800);
     	} if ($(document).scrollTop() > 3250) {
        		$('#ads_left').removeClass('show_ads_left').addClass('hide_ads_left');
