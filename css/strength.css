@@ -116,7 +116,7 @@ nav a:hover {
 @media (max-width: 480px) {
 
   header {
-    width: 96%;
+    width: 100%;
   }
   .header img {
     display: none;
@@ -241,20 +241,6 @@ nav a:hover {
     font-size: 4.1875em;
   }
 }
-
-// @media (max-width: 900px) {
-//   .banner h1 {
-//     margin-left: 60px;
-//     margin-right: 60px;
-//     font-size: 80px;
-//   }
-//   .banner .brand .brand_words {
-//     width: 25%;
-//   }
-//   .banner .brand .brand_img {
-//     width: 15%;
-//   }
-// }
 
 #options {
   max-width: 100%;
