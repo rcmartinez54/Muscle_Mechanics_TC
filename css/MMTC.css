@@ -354,13 +354,13 @@ nav a:hover {
   margin-top: 0;
   width: 68%;
   color: #000;
-  position: relative;
-  opacity: 1.0;
+  // position: relative;
+  // opacity: 1.0;
 }
 
-#section_one .section_wrap .right_side:hover {
-  opacity: 1.0;
-}
+// #section_one .section_wrap .right_side:hover {
+//   opacity: 1.0;
+// }
 
 #section_one .section_wrap .right_side h2 {
   padding: 10px;
@@ -375,14 +375,43 @@ nav a:hover {
   padding-right: 60px;
 }
 
-@media (max-width: 500px) {
+#media {
+  display: none;
+}
+
+#media .media h2 {
+  padding: 10px;
+  background: #000;
+  color: yellow;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+#media .media img {
+  width: 100%;
+}
+
+#media .media p {
+  margin: 0;
+  padding: 0 15px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
   #section_one {
-    padding-top: 10px;
     display: none;
+  }
+  #media {
+    display: block;
   }
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 751px) {
 
 }
 
@@ -468,13 +497,12 @@ nav a:hover {
   height: 500px;
 }
 
-@media (max-width: 500px) {
-  
-}
-
 @media only screen and (max-width: 500px) and (min-width: 300px) {
   #section_two .section_wrap .mmInfo {
     width: 100%;
+  }
+  #section_two .section_wrap .mmInfo h2 {
+    padding: 10px;
   }
   #section_two .section_wrap .mmInfo p {
     padding: 0 15px;
