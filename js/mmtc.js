@@ -27,6 +27,15 @@ $(document).ready(function() {
     	} 
     });
 
+// Toggles the hamburger icon
+
+  $(".hamburger").on('click', function() {
+    $(this).toggleClass("open");
+    $('nav').toggle(900);
+  })
+
+
+
 // Transitions testimonials  
 
     let counter = 0;
