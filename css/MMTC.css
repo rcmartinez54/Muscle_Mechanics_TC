@@ -107,8 +107,8 @@ nav a {
 
 nav a:hover {
   padding-bottom: 2px;
-  border-bottom: 2px solid #fa8000;
-  color: #fa8000;
+  border-bottom: 2px solid yellow;
+  color: #fff;
 }
 
 .header ul li {
@@ -155,32 +155,6 @@ nav a:hover {
   transform: rotate(-45deg);
 }
 
-// #media_header .media_menu .hamburger {
-//   background: #fff;
-//   width: 5%;
-// }
-
-// .media_menu .hamburger .topBun, 
-// .media_menu .hamburger .pattie,
-// .media_menu .hamburger .btmBun {
-//   height: 10px;
-//   background: #000;
-//   margin: 5px;
-//   border-radius: 5px;
-// }
-
-// .switch .hamburger .topBun {
-//   transform: rotate(-45deg) translate(-10px, 12px);
-// }
-
-// .switch .hamburger .pattie {
-//   opacity: 0;
-// }
-
-// .switch .hamburger .btmBun {
-//   transform: rotate(45deg) translate(10px, 10px);
-// }
-
 @media (max-width: 480px) {
 
   header {
@@ -205,7 +179,6 @@ nav a:hover {
     padding: .10em;
   }
   nav li {
-    background-color: yellow;
     border-radius: .5em;
     margin-right: .5em;
     margin-bottom: .5em;
@@ -214,11 +187,13 @@ nav a:hover {
     width: 90%;
   }
   nav a {
-    padding: 1em;
+    // padding: 1em;
     text-decoration: none;
-    color: #000;
+    color: yellow;
   }
-  
+  .hamburger {
+    float: none;
+  }
 }
 
 @media (max-width: 750px) {
