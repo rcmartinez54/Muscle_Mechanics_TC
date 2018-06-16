@@ -56,22 +56,6 @@ header {
   display: none;
 }
 
-.scroll {
-  background-color: #000;
-  padding: .625em 0;
-  position: fixed;
-  width: 90em;
-  top: 0;
-  z-index: 10;
-  transition: all 3s;
-}
-
-.header img {
-  display: inline;
-  margin-left: 20px;
-  width: 5%;
-}
-
 .header nav {
   display: inline-block;
   display: none;
@@ -158,11 +142,7 @@ nav a:hover {
 @media (max-width: 480px) {
 
   header {
-    display: none;
     width: 100%;
-  }
-  .header img {
-    display: none;
   }
   .header ul li {
     padding-left: 0;
@@ -187,7 +167,6 @@ nav a:hover {
     width: 90%;
   }
   nav a {
-    // padding: 1em;
     text-decoration: none;
     color: yellow;
   }
@@ -196,17 +175,14 @@ nav a:hover {
   }
 }
 
-@media (max-width: 750px) {
-  .header img {
-    display: none;
-  }
-  .nav ul {
-    text-align: center;
-  }
-  .nav ul li {
-    list-style: none;
-  }
-}
+// @media (max-width: 750px) {
+//   .nav ul {
+//     text-align: center;
+//   }
+//   .nav ul li {
+//     list-style: none;
+//   }
+// }
 
 /*--- Banner  ---*/
 
