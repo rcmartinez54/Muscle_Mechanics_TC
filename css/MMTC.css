@@ -139,8 +139,7 @@ nav a:hover {
   transform: rotate(-45deg);
 }
 
-@media (max-width: 480px) {
-
+@media only screen and (max-width: 500px) and (min-width: 300px) {
   header {
     width: 100%;
   }
@@ -187,14 +186,27 @@ nav a:hover {
   }
 }
 
-// @media (max-width: 750px) {
-//   .nav ul {
-//     text-align: center;
-//   }
-//   .nav ul li {
-//     list-style: none;
-//   }
-// }
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  .hamburger {
+    float: none;
+    width: 40px;
+    height: 20px;
+    margin: 10px 0 10px 30px;
+  }
+  .hamburger .one {
+    top: 0;
+  }
+  .hamburger .two, .hamburger .three {
+    top: 10px;
+  }
+  .hamburger .four {
+    top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 751px) {
+  
+}
 
 /*--- Banner  ---*/
 
@@ -245,6 +257,9 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 750px) and (min-width: 501px) {
+  .banner .banner_words {
+
+  }
   .banner .banner_words h1 {
     margin-left: 5px;
     margin-right: 5px;
@@ -256,8 +271,11 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1100px) and (min-width: 751px) {
+  .banner .banner_words {
+    padding-top: 3em;
+  }
   .banner .banner_words h1 {
-    font-size: 4.1875em;
+    font-size: 3.1875em;
   }
 }
 
@@ -274,7 +292,6 @@ nav a:hover {
   cursor: pointer;
   border: 2px solid #fff;
 }
-
 
 #options .strength {
   margin-left: 0px;
@@ -304,12 +321,19 @@ nav a:hover {
   opacity: 0.2;
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 500px) and (min-width: 300px) {
   #options .nav_options {
     float: none;
     width: 100%;
-    margin: 0;
   }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 751px) {
+  
 }
 
 @media (max-width: 900px) {
@@ -434,7 +458,15 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 750px) and (min-width: 501px) {
-  
+  #section_one {
+    padding-top: 30px;
+  }
+  #section_one .section_wrap .left_side img {
+    margin-left: 35px;
+  }
+  #section_one .section_wrap .right_side h2 {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 1100px) and (min-width: 751px) {
@@ -578,7 +610,6 @@ nav a:hover {
 #section_three .location .form {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 70px;
 }
 
 #section_three .location .form h2 {
@@ -587,7 +618,7 @@ nav a:hover {
 
 #section_three .location .form input {
   padding: 20px;
-  margin: 20px;
+  margin: 10px;
   width: 80%;
   border-radius: 5px;
   font-size: 16px;
@@ -599,8 +630,13 @@ nav a:hover {
   padding-bottom: 50px;
   width: 80%;
   border-radius: 5px;
-  margin: 20px;
+  margin: 10px;
   font-size: 16px;
+}
+
+#section_three .location .form .submit {
+  background: yellow;
+  text-transform: uppercase;
 }
 
 #section_three .testimonial_wrap {
@@ -621,10 +657,6 @@ nav a:hover {
   border: 1px solid black;
 }
 
-// #section_three .test {
-//   display: none;
-// }
-
 #section_three .test:first-child {
   display: block;
 }
@@ -636,13 +668,7 @@ nav a:hover {
   text-align: center;
 }
 
-// #section_three .section_wrap {
-//   width: 70%;
-//   margin: auto;
-//   background: #fff;
-// }
-
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) and (min-width: 300px) {
   #section_three {
     height: 1060px;
   }
@@ -654,6 +680,19 @@ nav a:hover {
     float: none;
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  #section_three .testimonial_wrap {
+    padding-top: 35px;
+  }
+  #section_three .location .form h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 751px) {
+  
 }
 
 /* -- Footer -- */
