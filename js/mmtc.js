@@ -17,13 +17,18 @@ $(document).ready(function() {
        		$('#ads_left').removeClass('show_ads_left').addClass('hide_ads_left');
        		$('#ads_right').removeClass('show_ads_right').addClass('hide_ads_right');
     	} if ($(document).scrollTop() > 900) {
-    		console.log('hello');
-    		$('#two').addClass('two_change'); 
+    		  $('#two').addClass('two_change'); 
 		  } if ($(document).scrollTop() > 1640) {
-    	    $(".info_imgs").fadeIn(800);
-    	} if ($(document).scrollTop() > 3250) {
-       		$('#ads_left').removeClass('show_ads_left').addClass('hide_ads_left');
-       		$('#ads_right').removeClass('show_ads_right').addClass('hide_ads_right');
+    	    $(".row").fadeIn(800);
+    	} if ($(document).one().scrollTop() > 2100) {
+          $('#flyer').removeClass('hide_flyer');
+          $('#flyer').addClass('show_flyer');
+      } if ($(document).scrollTop() > 2900) {
+          $('#flyer').removeClass('show_flyer');
+          $('#flyer').addClass('hide_flyer');
+      } if ($(document).scrollTop() > 3250) {
+          $('#ads_left').removeClass('show_ads_left').addClass('hide_ads_left');
+          $('#ads_right').removeClass('show_ads_right').addClass('hide_ads_right');
     	} 
     });
 
@@ -34,7 +39,12 @@ $(document).ready(function() {
     $('nav').toggle(900);
   })
 
+// Closes Flyer Ad 
 
+  $('.close_flyer').on('click', function() {
+    $('#flyer').removeClass('show_flyer');
+    $('#flyer').addClass('hide_flyer');
+  })
 
 // Transitions testimonials  
 
