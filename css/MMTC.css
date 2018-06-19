@@ -48,7 +48,6 @@ header {
   background-color: #000;
   opacity: 0.7;
   border-bottom: 1px solid #fff;
-  padding: .625em 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -121,10 +120,10 @@ nav a:hover {
   top: 0;
 }
 .hamburger .two, .hamburger .three {
-  top: 16px;
+  top: 10px;
 }
 .hamburger .four {
-  top: 30px;
+  top: 20px;
 }
 
 .hamburger.open .one, .hamburger.open .four {
@@ -404,13 +403,7 @@ nav a:hover {
   margin-top: 0;
   width: 68%;
   color: #000;
-  // position: relative;
-  // opacity: 1.0;
 }
-
-// #section_one .section_wrap .right_side:hover {
-//   opacity: 1.0;
-// }
 
 #section_one .section_wrap .right_side h2 {
   padding: 10px;
@@ -473,32 +466,6 @@ nav a:hover {
 
 }
 
-//   #section_one .section_wrap .left_side {
-//     text-align: center;
-//     float: none;
-//     margin: auto;
-//     width: 100%;
-//     display: none;
-//   }
-//   #section_one .section_wrap .left_side img {
-//     margin: 0px;
-//   }
-
-//   #section_one .section_wrap .right_side {
-//     float: none;
-//     margin-top: 0;
-//     width: 100%;
-//     color: #000;
-//     position: relative;
-//     opacity: 1.0;
-//     line-height: 25px;
-//   }
-//   #section_one .section_wrap .right_side p {
-//     margin: 0;
-//     padding: 0;
-//   }
-// }
-
 /* -- Section Two -- */
 
 #section_two {
@@ -507,6 +474,7 @@ nav a:hover {
   margin: auto;
   padding-top: 40px;
   font-size: 1.1em;
+  position: relative;
 }
 
 #section_two .mmInfo {
@@ -549,29 +517,37 @@ nav a:hover {
   width: 100%;
 }
 
-// .Info_slides {
-//   max-width: 100%;
-//   margin: auto;
-//   padding-bottom: 5px;
-// }
+.hide_flyer {
+  position: absolute;
+  top: 2500px;
+  right: -500px;
+}
 
-// .Info_slides .info_imgs {
-//   text-align: center;
-//   display: none;
-//   padding-top: 10px;
-// }
+.show_flyer {
+  position: absolute;
+  top: 2500px;
+  right: 960px;
+  transition: 2s;
+}
 
-// .Info_slides .info_imgs .photo {
-//   float: left;
-//   width: 33.333333%;
-//   height: 500px;
-//   border: 0px solid #fff;
-// }
+.hide_flyer h2 {
+  background: yellow;
+  color: #000;
+  width: 25%;
+  margin: 0;
+  text-align: center;
+  transition: 2s;
+}
 
-// .Info_slides .info_imgs .photo img {
-//   width: 100%;
-//   height: 500px;
-// }
+.show_flyer h2 {
+  margin: 0;
+  color: yellow;
+  background: #000;
+  width: 25%;
+  text-align: center;
+  opacity: 0.7;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 500px) and (min-width: 300px) {
   #section_two .section_wrap .mmInfo {
