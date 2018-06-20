@@ -48,7 +48,6 @@ header {
   background-color: #000;
   opacity: 0.7;
   border-bottom: 1px solid #fff;
-  padding: .625em 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -121,10 +120,10 @@ nav a:hover {
   top: 0;
 }
 .hamburger .two, .hamburger .three {
-  top: 16px;
+  top: 10px;
 }
 .hamburger .four {
-  top: 30px;
+  top: 20px;
 }
 
 .hamburger.open .one, .hamburger.open .four {
@@ -139,8 +138,7 @@ nav a:hover {
   transform: rotate(-45deg);
 }
 
-@media (max-width: 480px) {
-
+@media only screen and (max-width: 500px) and (min-width: 300px) {
   header {
     width: 100%;
   }
@@ -168,7 +166,7 @@ nav a:hover {
   }
   nav a {
     text-decoration: none;
-    color: #fff;
+    color: yellow;
   }
   .hamburger {
     float: none;
@@ -187,6 +185,28 @@ nav a:hover {
   }
 }
 
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  .hamburger {
+    float: none;
+    width: 40px;
+    height: 20px;
+    margin: 10px 0 10px 30px;
+  }
+  .hamburger .one {
+    top: 0;
+  }
+  .hamburger .two, .hamburger .three {
+    top: 10px;
+  }
+  .hamburger .four {
+    top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 751px) {
+  
+}
+
 /*--- Banner  ---*/
 
 .banner {
@@ -198,11 +218,6 @@ nav a:hover {
   background-size: cover;
 }
 
-.banner .brand_words img {
-  width: 60px;
-  float: left;
-}
-
 .banner .brand .brand_words {
   float: left;
   width: 80%;
@@ -212,13 +227,13 @@ nav a:hover {
 
 .banner .banner_words {
   text-transform: uppercase;
+  padding: 0 20px;
 }
 
 .banner h1 {
   font-family: 'Monoton', cursive;
   text-align: center;
   word-spacing: 20px;
-  padding-top: 90px;
   color: yellow; 
   font-size: 5.1875em;
   font-weight: 300;
@@ -240,6 +255,7 @@ nav a:hover {
   }
   .banner .brand .brand_words {
     width: 85%;
+    padding-bottom: 0;
   }
 }
 
@@ -296,12 +312,19 @@ nav a:hover {
   opacity: 0.2;
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 500px) and (min-width: 300px) {
   #options .nav_options {
     float: none;
     width: 100%;
-    margin: 0;
   }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 751px) {
+  
 }
 
 @media (max-width: 900px) {
@@ -397,14 +420,33 @@ nav a:hover {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 500px) and (min-width: 300px) {
   #ads_left,
   #ads_right {
     display: none;
   }
-
   #one {
     width: 98%;
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  .show_ads_left,
+  .show_ads_right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 751px) {
+  .show_ads_left,
+  .show_ads_right {
+    width: 150px;
+  }
+  .show_ads_right {
+    right: 20px;
+  }
+  .show_ads_left {
+    left: 20px;
   }
 }
 
@@ -432,4 +474,10 @@ footer .social_media {
 footer .social_media img {
   padding: 10px;
   width: 10%;
+}
+
+@media (max-width: 500px) {
+  footer .social_media img {
+    width: 20%;
+  }
 }
