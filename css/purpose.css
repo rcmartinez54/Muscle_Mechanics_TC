@@ -48,28 +48,11 @@ header {
   background-color: #000;
   opacity: 0.7;
   border-bottom: 1px solid #fff;
-  padding: .625em 0;
   position: fixed;
   width: 90em;
   top: 0;
   z-index: 10;
   display: none;
-}
-
-.scroll {
-  background-color: #000;
-  padding: .625em 0;
-  position: fixed;
-  width: 90em;
-  top: 0;
-  z-index: 10;
-  transition: all 3s;
-}
-
-.header img {
-  display: inline;
-  margin-left: 20px;
-  width: 5%;
 }
 
 .header nav {
@@ -137,10 +120,10 @@ nav a:hover {
   top: 0;
 }
 .hamburger .two, .hamburger .three {
-  top: 16px;
+  top: 10px;
 }
 .hamburger .four {
-  top: 30px;
+  top: 20px;
 }
 
 .hamburger.open .one, .hamburger.open .four {
@@ -228,22 +211,17 @@ nav a:hover {
   background-size: cover;
 }
 
-.banner .brand .brand_img {
-  float: left;
-  width: 10%;
-  padding: 20px;
-}
-
-.banner .brand .brand_img img {
-  width: 80%;
-}
-
 .banner .brand .brand_words {
   float: left;
-  width: 14%;
-  padding: 10px;
+  width: 80%;
+  padding: 30px;
   color: #fff;
 }
+
+// .banner .brand .brand_words h3 {
+//   float: left;
+//   margin-left: 20px;
+// }
 
 .banner .banner_words {
   text-transform: uppercase;
@@ -254,8 +232,8 @@ nav a:hover {
   font-family: 'Monoton', cursive;
   text-align: center;
   word-spacing: 25px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 0;
+  padding: 0 110px;
   color: yellow; 
   text-shadow: -5px -5px 5px #000;
   font-size: 92px;
