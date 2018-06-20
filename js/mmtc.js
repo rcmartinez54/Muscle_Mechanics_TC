@@ -20,13 +20,7 @@ $(document).ready(function() {
     		  $('#two').addClass('two_change'); 
 		  } if ($(document).scrollTop() > 1640) {
     	    $(".row").fadeIn(800);
-    	} if ($(document).one().scrollTop() > 2100) {
-          $('#flyer').removeClass('hide_flyer');
-          $('#flyer').addClass('show_flyer');
-      } if ($(document).scrollTop() > 2900) {
-          $('#flyer').removeClass('show_flyer');
-          $('#flyer').addClass('hide_flyer');
-      } if ($(document).scrollTop() > 3250) {
+    	} if ($(document).scrollTop() > 3250) {
           $('#ads_left').removeClass('show_ads_left').addClass('hide_ads_left');
           $('#ads_right').removeClass('show_ads_right').addClass('hide_ads_right');
     	} 
