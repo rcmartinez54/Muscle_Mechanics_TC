@@ -228,10 +228,10 @@ nav a:hover {
   background-size: cover;
 }
 
-.banner .brand_words img {
-  width: 60px;
-  float: left;
-}
+// .banner .brand_words img {
+//   width: 60px;
+//   float: left;
+// }
 
 .banner .brand .brand_words {
   float: left;
