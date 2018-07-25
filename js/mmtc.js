@@ -20,7 +20,7 @@ $(document).ready(function() {
     		  $('#two').addClass('two_change'); 
 		  } if ($(document).scrollTop() > 1640) {
     	    $(".row").fadeIn(800);
-    	} if ($(document).scrollTop() > 3250) {
+    	} if ($(document).scrollTop() > 1050) {
           $('#ads_left').removeClass('show_ads_left').addClass('hide_ads_left');
           $('#ads_right').removeClass('show_ads_right').addClass('hide_ads_right');
     	} 
