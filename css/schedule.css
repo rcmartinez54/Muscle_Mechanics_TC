@@ -363,6 +363,8 @@ nav a:hover {
 
 #one .flyer {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #one .flyer img {
@@ -516,4 +518,10 @@ footer .social_media {
 footer .social_media img {
   padding: 10px;
   width: 8%;
+}
+
+@media (max-width: 500px) {
+  footer .social_media img {
+    width: 20%;
+  }
 }
