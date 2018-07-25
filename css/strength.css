@@ -286,8 +286,8 @@ nav a:hover {
   background-size: cover;
 }
 
-#options .nutrition {
-  background: url('../img/nutrition.jpeg');
+#options .schedule {
+  background: url('../img/chalkBoard.jpeg');
   background-size: cover;
 }
 
@@ -348,41 +348,50 @@ nav a:hover {
   position: relative;
 }
 
-#one .wod_img {
-  width: 100%;
+#one .video {
+  margin-top: 20px;
 }
 
-#one .wod_img img {
-  width: 100%;
-}
-
-#one .breakfast {
-  margin: 0 auto;
-}
-
-#one .lunch {
-  margin: 0 auto;
-}
-
-#one .dinner {
-  margin: 0 auto;
-}
-
-#one table {
-  width: 100%;
-}
-
-#one table th {
-  padding: 20px;
-  font-size: 24px;
-  background: skyblue;
-}
-
-#one table td {
-  padding: 15px;
-  background: lightgray;
+#one video {
   text-align: center;
+  width: 100%;
 }
+
+// #one .wod_img {
+//   width: 100%;
+// }
+
+// #one .wod_img img {
+//   width: 100%;
+// }
+
+// #one .breakfast {
+//   margin: 0 auto;
+// }
+
+// #one .lunch {
+//   margin: 0 auto;
+// }
+
+// #one .dinner {
+//   margin: 0 auto;
+// }
+
+// #one table {
+//   width: 100%;
+// }
+
+// #one table th {
+//   padding: 20px;
+//   font-size: 24px;
+//   background: skyblue;
+// }
+
+// #one table td {
+//   padding: 15px;
+//   background: lightgray;
+//   text-align: center;
+// }
 
 .hide_ads_left {
   width: 180px;
