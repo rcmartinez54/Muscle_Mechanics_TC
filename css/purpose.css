@@ -462,7 +462,10 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1100px) and (min-width: 751px) {
-  
+  #ads_right,
+  #ads_left {
+    display: none;
+  }
 }
 
 /* -- Footer -- */
