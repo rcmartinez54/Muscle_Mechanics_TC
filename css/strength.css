@@ -357,77 +357,46 @@ nav a:hover {
   width: 100%;
 }
 
-// #one .wod_img {
+#ads_left,
+#ads_right {
+  display: none;
+}
+
+// .hide_ads_left {
+//   width: 180px;
+//   position: fixed;
+//   top: 300px;
+//   left: -300px;
+//   transition: all .5s;
+// }
+
+// .show_ads_left {
+//   width: 180px;
+//   position: fixed;
+//   top: 300px;
+//   left: 35px;
+//   transition: all .5s;
+// }
+
+// .hide_ads_right {
+//   width: 180px;
+//   position: fixed;
+//   top: 300px;
+//   right: -300px;
+//   transition: all .5s;
+// }
+
+// .show_ads_right {
+//   width: 180px;
+//   position: fixed;
+//   top: 300px;
+//   right: 35px;
+//   transition: all .5s;
+// }
+
+// .size img {
 //   width: 100%;
 // }
-
-// #one .wod_img img {
-//   width: 100%;
-// }
-
-// #one .breakfast {
-//   margin: 0 auto;
-// }
-
-// #one .lunch {
-//   margin: 0 auto;
-// }
-
-// #one .dinner {
-//   margin: 0 auto;
-// }
-
-// #one table {
-//   width: 100%;
-// }
-
-// #one table th {
-//   padding: 20px;
-//   font-size: 24px;
-//   background: skyblue;
-// }
-
-// #one table td {
-//   padding: 15px;
-//   background: lightgray;
-//   text-align: center;
-// }
-
-.hide_ads_left {
-  width: 180px;
-  position: fixed;
-  top: 300px;
-  left: -300px;
-  transition: all .5s;
-}
-
-.show_ads_left {
-  width: 180px;
-  position: fixed;
-  top: 300px;
-  left: 35px;
-  transition: all .5s;
-}
-
-.hide_ads_right {
-  width: 180px;
-  position: fixed;
-  top: 300px;
-  right: -300px;
-  transition: all .5s;
-}
-
-.show_ads_right {
-  width: 180px;
-  position: fixed;
-  top: 300px;
-  right: 35px;
-  transition: all .5s;
-}
-
-.size img {
-  width: 100%;
-}
 
 @media only screen and (max-width: 500px) and (min-width: 300px) {
   #ads_left,
